@@ -55,9 +55,11 @@ public class Deck {
     }
 
     public void dealCard(Vector<Card> deck) {
-        Card card = deck.get(0);
-        deck.remove(0);
-        System.out.println(card);
+        for (int i = 0; i < 5; i++) {
+            Card card = deck.get(0);
+            deck.remove(0);
+            System.out.println(card);
+        }
     }
 
     public void sameCard(Vector<Card> deck) {
